@@ -19,8 +19,9 @@ export default defineConfig({
         {
           text: "Homelab",
           items: [
-            { text: 'Prevent Suspend on Lid Close', link: '/homelab/prevent_suspend_on_lid_close.md' },
+            { text: 'Prevent Suspend On Lid Close', link: '/homelab/prevent_suspend_on_lid_close.md' },
             { text: 'Setting Up SSH', link: '/homelab/setting_up_ssh.md' },
+            { text: 'Creating A New Sudo User', link: '/homelab/creating_a_new_sudo_user.md' },
           ]
         }
       ]
