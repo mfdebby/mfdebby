@@ -1,6 +1,6 @@
 # Setting Up SSH
 
-## Generate an ssh key pair on your local machine
+## 1. Generate an ssh key pair on your local machine
 
 ```bash
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/<key_file_name>
@@ -12,7 +12,7 @@ ssh-keygen -t rsa -b 4096 -f ~/.ssh/<key_file_name>
 ssh-copy-id -i ~/.ssh/<key_file_name>.pub <user>@<server>
 ```
 
-## Securing SSH
+## 2. Secure SSH
 
 ### Open the ssh config file
 
