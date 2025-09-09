@@ -1,6 +1,7 @@
-# No Suspend on Lid Close
+# Prevent Suspend on Lid Close
 
-To prevent the laptop from suspending or sleeping when the lid is closed.
+I'm currently running proxmox server in my old thinkpad. The steps bellow will
+prevent the laptop from suspending or sleeping when the lid is closed.
 
 ## 1. Open the logind configuration file
 

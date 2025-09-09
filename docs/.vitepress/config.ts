@@ -19,7 +19,8 @@ export default defineConfig({
         {
           text: "Homelab",
           items: [
-            { text: 'No Suspend on Lid Close', link: '/homelab/no_suspend_on_lid_close.md' }
+            { text: 'Prevent Suspend on Lid Close', link: '/homelab/prevent_suspend_on_lid_close.md' },
+            { text: 'Setting Up SSH', link: '/homelab/setting_up_ssh.md' },
           ]
         }
       ]
