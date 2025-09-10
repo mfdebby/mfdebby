@@ -6,6 +6,12 @@
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/<key_file_name>
 ```
 
+## Ensure ssh folder exists in your server
+
+```bash
+mkdir ~/.ssh
+```
+
 ## Copy the public key to the server
 
 ```bash
