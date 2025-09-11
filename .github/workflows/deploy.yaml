@@ -48,4 +48,4 @@ jobs:
           context: .
           push: true
           file: ./dockerfiles/Dockerfile.docs
-          tags: ghcr.io/mfdebby/docs:${{ needs.commit-hash.outputs.commit_hash }}
+          tags: ghcr.io/mfdebby/mfdebby:${{ needs.commit-hash.outputs.commit_hash }}
