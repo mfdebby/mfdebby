@@ -10,7 +10,7 @@ vi /etc/systemd/logind.conf
 
 ## 2. Find and set the following option
 
-Uncomment (remove `#` if present) and set:
+> Uncomment (remove `#` if present) and set:
 
 ```bash
 HandleLidSwitch=ignore
