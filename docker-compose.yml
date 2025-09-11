@@ -1,0 +1,9 @@
+services:
+  docs:
+      build:
+        context: ./
+        dockerfile: ./dockerfiles/Dockerfile.docs
+      ports:
+        - 2003:2003
+      restart: always
+
