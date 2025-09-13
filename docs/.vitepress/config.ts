@@ -24,6 +24,7 @@ export default defineConfig({
             { text: 'Setting Up Unattended Upgrades', link: '/notes/setting_up_unattended_upgrades.md' },
             { text: 'Setting Up Docker', link: '/notes/setting_up_docker.md' },
             { text: 'Setting Up UFW', link: '/notes/setting_up_ufw.md' },
+            { text: 'Setting Up SSH Identity', link: '/notes/setting_up_ssh_identity.md' },
           ]
         }
       ]
