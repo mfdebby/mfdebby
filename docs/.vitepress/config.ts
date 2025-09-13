@@ -25,6 +25,7 @@ export default defineConfig({
             { text: 'Setting Up Docker', link: '/notes/setting_up_docker.md' },
             { text: 'Setting Up UFW', link: '/notes/setting_up_ufw.md' },
             { text: 'Setting Up SSH Identity', link: '/notes/setting_up_ssh_identity.md' },
+            { text: 'Setting Up Docker Context', link: '/notes/setting_up_docker_context.md' },
           ]
         }
       ]
