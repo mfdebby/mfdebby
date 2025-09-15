@@ -1,9 +1,71 @@
 services:
-  docs:
-      build:
-        context: ./
-        dockerfile: ./dockerfiles/Dockerfile.docs
-      ports:
-        - 2003:2003
-      restart: always
+  certbot_dns_cloudflare:
+    image: certbot/dns-cloudflare
+    # container_name: certbot_dns_cloudflare
+    volumes:
+      - certbot_dns_cloudflare:/etc/letsencrypt
+    #   - ./cloudflare.ini:/root/cloudflare.ini
+    secrets:
+      - source: cloudflare_ini 
+        target: /root/cloudflare.ini 
+    command: >-
+      certonly --dns-cloudflare
+      --dns-cloudflare-credentials /root/cloudflare.ini
+      --dns-cloudflare-propagation-seconds 15
+      --email ${EMAIL} 
+      --agree-tos
+      --no-eff-email
+      -n
+      -d *.${DOMAIN}
+      -d ${DOMAIN}
 
+  # docs:
+  #     build:
+  #       context: ./
+  #       dockerfile: ./dockerfiles/Dockerfile.docs
+  #     container_name: docs
+  #     ports:
+  #       - 2003:2003
+  #     restart: always
+
+  hello_world:
+    image: crccheck/hello-world
+    networks:
+      - my-overlay-network
+
+  reverse-proxy:
+    image: nginx:latest
+    volumes:
+      - certbot_dns_cloudflare:/etc/letsencrypt
+    environment:
+      DOMAIN: ${DOMAIN}
+    ports:
+      - 80:80
+      - 443:443
+    configs:
+      - source: nginx_conf
+        target: /etc/nginx/nginx.conf
+      - source: nginx_default_template
+        target: /etc/nginx/conf.d/default.conf
+    depends_on:
+      - certbot_dns_cloudflare
+      - hello_world
+    networks:
+      - my-overlay-network
+
+configs:
+  nginx_conf:
+    external: true
+  nginx_default_template:
+    external: true
+
+secrets:
+  cloudflare_ini:
+    external: true
+
+volumes:
+  certbot_dns_cloudflare:
+
+networks:
+  my-overlay-network:
+    driver: overlay
