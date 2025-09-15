@@ -1,10 +1,8 @@
 services:
   certbot_dns_cloudflare:
     image: certbot/dns-cloudflare
-    # container_name: certbot_dns_cloudflare
     volumes:
       - certbot_dns_cloudflare:/etc/letsencrypt
-    #   - ./cloudflare.ini:/root/cloudflare.ini
     secrets:
       - source: cloudflare_ini 
         target: /root/cloudflare.ini 
@@ -12,21 +10,23 @@ services:
       certonly --dns-cloudflare
       --dns-cloudflare-credentials /root/cloudflare.ini
       --dns-cloudflare-propagation-seconds 15
-      --email ${EMAIL} 
+      --email ${DOMAIN_EMAIL} 
       --agree-tos
       --no-eff-email
       -n
       -d *.${DOMAIN}
       -d ${DOMAIN}
+    env_file:
+      - .env
 
-  # docs:
-  #     build:
-  #       context: ./
-  #       dockerfile: ./dockerfiles/Dockerfile.docs
-  #     container_name: docs
-  #     ports:
-  #       - 2003:2003
-  #     restart: always
+  docs:
+      build:
+        context: ./
+        dockerfile: ./dockerfiles/Dockerfile.docs
+      container_name: docs
+      ports:
+        - 2003:2003
+      restart: always
 
   hello_world:
     image: crccheck/hello-world
@@ -37,8 +37,6 @@ services:
     image: nginx:latest
     volumes:
       - certbot_dns_cloudflare:/etc/letsencrypt
-    environment:
-      DOMAIN: ${DOMAIN}
     ports:
       - 80:80
       - 443:443
