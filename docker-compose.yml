@@ -16,17 +16,17 @@ services:
       -n
       -d *.${DOMAIN}
       -d ${DOMAIN}
+    deploy:
+      restart_policy:
+        delay: 300s
+        window: 300s
     env_file:
       - .env
 
-  # docs:
-  #     build:
-  #       context: ./
-  #       dockerfile: ./dockerfiles/Dockerfile.docs
-  #     container_name: docs
-  #     ports:
-  #       - 2003:2003
-  #     restart: always
+  docs:
+      image: ghcr.io/mfdebby/mfdebby/docs:11de62b40a9786a33907293f440ffa9c36c6c640
+      networks:
+        - mfdebby-network
 
   hello_world:
     image: crccheck/hello-world
