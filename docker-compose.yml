@@ -19,7 +19,6 @@ services:
     deploy:
       restart_policy:
         delay: 300s
-        window: 300s
     env_file:
       - .env
 
