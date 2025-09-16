@@ -19,19 +19,19 @@ services:
     env_file:
       - .env
 
-  docs:
-      build:
-        context: ./
-        dockerfile: ./dockerfiles/Dockerfile.docs
-      container_name: docs
-      ports:
-        - 2003:2003
-      restart: always
+  # docs:
+  #     build:
+  #       context: ./
+  #       dockerfile: ./dockerfiles/Dockerfile.docs
+  #     container_name: docs
+  #     ports:
+  #       - 2003:2003
+  #     restart: always
 
   hello_world:
     image: crccheck/hello-world
     networks:
-      - my-overlay-network
+      - mfdebby-network
 
   reverse-proxy:
     image: nginx:latest
@@ -49,7 +49,7 @@ services:
       - certbot_dns_cloudflare
       - hello_world
     networks:
-      - my-overlay-network
+      - mfdebby-network
 
 configs:
   nginx_conf:
@@ -65,5 +65,5 @@ volumes:
   certbot_dns_cloudflare:
 
 networks:
-  my-overlay-network:
+  mfdebby-network:
     driver: overlay
