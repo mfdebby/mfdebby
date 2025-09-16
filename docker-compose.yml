@@ -45,9 +45,6 @@ services:
         target: /etc/nginx/nginx.conf
       - source: nginx_default_template
         target: /etc/nginx/conf.d/default.conf
-    depends_on:
-      - certbot_dns_cloudflare
-      - hello_world
     networks:
       - mfdebby-network
 
