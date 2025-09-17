@@ -72,7 +72,7 @@ jobs:
         uses: cssnr/stack-deploy-action@v1
         with:
           name: 'mfdebby'
-          file: 'docker-stack.yaml'
+          file: 'docker-stack.yml'
           host: ${{ secrets.HOST }}
           user: ${{ secrets.DEPLOY_USER }}
           ssh_key: ${{ secrets.DEPLOY_SSH_KEY }}
