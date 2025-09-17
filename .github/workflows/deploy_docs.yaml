@@ -62,13 +62,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: create env file
+      - name: Create env file
         run: |
           echo "GIT_COMMIT_HASH=${{ github.sha }}" >> .env
           echo "DOMAIN=mfdebby.dev" >> .env
           echo "DOMAIN_EMAIL=${{ secrets.DOMAIN_EMAIL }}" >> .env
 
-      - name: 'Docker Stack Deploy'
+      - name: Docker stack deploy
         uses: cssnr/stack-deploy-action@v1
         with:
           name: 'mfdebby'
