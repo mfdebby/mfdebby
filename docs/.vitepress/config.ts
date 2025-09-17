@@ -8,6 +8,9 @@ export default defineConfig({
   // head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
     // logo: "/logo.png",
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: "Notes", link: "/notes/prevent_suspend_on_lid_close" },
     ],
