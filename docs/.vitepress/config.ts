@@ -26,6 +26,7 @@ export default defineConfig({
             { text: 'Setting Up UFW', link: '/notes/setting_up_ufw.md' },
             { text: 'Setting Up SSH Identity', link: '/notes/setting_up_ssh_identity.md' },
             { text: 'Setting Up Docker Context', link: '/notes/setting_up_docker_context.md' },
+            { text: 'Setting Up SSL with Cloudflare and Certbot', link: '/notes/setting_up_ssl_with_cloudflare_and_certbot.md' }
           ]
         }
       ]
