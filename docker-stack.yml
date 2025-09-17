@@ -23,7 +23,7 @@ services:
       - .env
 
   docs:
-      image: ghcr.io/mfdebby/mfdebby/docs:11de62b40a9786a33907293f440ffa9c36c6c640
+      image: ghcr.io/mfdebby/mfdebby/docs:${GIT_COMMIT_HASH}
       networks:
         - mfdebby-network
 
