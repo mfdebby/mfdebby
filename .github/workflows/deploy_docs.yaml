@@ -64,9 +64,9 @@ jobs:
 
       - name: create env file
         run: |
-          echo "GIT_COMMIT_HASH=${{ github.sha }}" >> env
-          echo "DOMAIN=mfdebby.dev" >> env
-          echo "DOMAIN_EMAIL=${{ secrets.DOMAIN_EMAIL }}" >> env
+          echo "GIT_COMMIT_HASH=${{ github.sha }}" >> .env
+          echo "DOMAIN=mfdebby.dev" >> .env
+          echo "DOMAIN_EMAIL=${{ secrets.DOMAIN_EMAIL }}" >> .env
 
       - name: 'Docker Stack Deploy'
         uses: cssnr/stack-deploy-action@v1
@@ -76,4 +76,4 @@ jobs:
           host: ${{ secrets.HOST }}
           user: ${{ secrets.DEPLOY_USER }}
           ssh_key: ${{ secrets.DEPLOY_SSH_KEY }}
-          env_file: './env'
+          env_file: '.env'
