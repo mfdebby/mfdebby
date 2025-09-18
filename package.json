@@ -6,12 +6,21 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview --port 2003 docs"
+    "docs:preview": "vitepress preview --port 2003 docs",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "2.0.0-alpha.12"
+    "vitepress": "2.0.0-alpha.12",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.0.6",
+    "vite-plugin-vue-devtools": "^8.0.0"
+  },
+  "dependencies": {
+    "vue": "^3.5.21"
   }
 }
