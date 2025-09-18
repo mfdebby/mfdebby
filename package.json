@@ -14,13 +14,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
-    "vitepress": "2.0.0-alpha.12",
     "@vitejs/plugin-vue": "^6.0.1",
+    "naive-ui": "^2.43.1",
     "vite": "^7.0.6",
-    "vite-plugin-vue-devtools": "^8.0.0"
+    "vite-plugin-vue-devtools": "^8.0.0",
+    "vitepress": "2.0.0-alpha.12"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "@vicons/ionicons5": "^0.13.0",
+    "pinia": "^3.0.3",
+    "tailwindcss": "^4.1.13",
     "vue": "^3.5.21"
   }
 }

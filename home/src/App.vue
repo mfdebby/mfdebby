@@ -1,47 +1,39 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { darkTheme } from "naive-ui"
+import { useThemeStore } from '@/store/theme'
+
+import Experience from '@/components/Experience.vue'
+import Navbar from '@/components/Navbar.vue'
+
+const theme = useThemeStore()
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <n-config-provider :theme="theme.isDark ? darkTheme : null">
+    <n-layout>
+      <n-layout-header>
+        <Navbar />
+      </n-layout-header>
+      <n-layout-content content-style="padding: 24px;">
+        <Experience />
+      </n-layout-content>
+      <n-layout-footer>Chengfu Road</n-layout-footer>
+    </n-layout>
+  </n-config-provider>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+.n-layout-header,
+.n-layout-footer {
+  background: rgba(128, 128, 128, 0.2);
+  padding: 24px;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.n-layout-sider {
+  background: rgba(128, 128, 128, 0.3);
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.n-layout-content {
+  background: rgba(128, 128, 128, 0.4);
 }
 </style>
