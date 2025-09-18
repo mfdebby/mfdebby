@@ -110,7 +110,7 @@ dns_cloudflare_api_token=<api_token>
 vi nginx/nginx.conf
 ```
 
-```conf
+```text
 # Using `auto` will automatically determine how
 # many worker your cpu can handle
 worker_processes  auto;
@@ -137,7 +137,7 @@ http {
 vi nginx/templates/default.conf.template
 ```
 
-```conf
+```text
 # Set ssl certificate credentials
 ssl_certificate /etc/letsencrypt/live/${DOMAIN}/fullchain.pem;
 ssl_certificate_key /etc/letsencrypt/live/${DOMAIN}/privkey.pem;
