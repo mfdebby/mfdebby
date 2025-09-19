@@ -17,7 +17,7 @@ import {
 
   // Theme
   NConfigProvider,
-  NSwitch
+  NSwitch,
 } from 'naive-ui'
 import { createPinia } from 'pinia'
 
@@ -40,8 +40,8 @@ const naive = create({
     NGridItem,
 
     NConfigProvider,
-    NSwitch
-  ]
+    NSwitch,
+  ],
 })
 
 const app = createApp(App)
@@ -50,8 +50,3 @@ const pinia = createPinia()
 app.use(pinia)
 app.use(naive)
 app.mount('#app')
-
-
-
-
-

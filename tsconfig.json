@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": [
-        "./home/src/*"
-      ]
+      "@/*": ["./home/src/*"]
     }
   },
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "docs/.vitepress/dist",
+    "docs/.vitepress/cache"
   ]
 }

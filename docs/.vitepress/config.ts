@@ -1,38 +1,53 @@
-import { defineConfig } from "vitepress";
-
+import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  lang: "en-US",
-  title: "mfdebby",
+  lang: 'en-US',
+  title: 'mfdebby',
   description: "mfdebby's site containing notes on anything related to tech.",
   // head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
     // logo: "/logo.png",
     search: {
-      provider: 'local'
+      provider: 'local',
     },
-    nav: [
-      { text: "Notes", link: "/notes/prevent_suspend_on_lid_close" },
-    ],
+    nav: [{ text: 'Notes', link: '/notes/prevent_suspend_on_lid_close' }],
     sidebar: {
       '/notes/': [
         {
-          text: "Notes",
+          text: 'Notes',
           items: [
-            { text: 'Prevent Suspend On Lid Close', link: '/notes/prevent_suspend_on_lid_close.md' },
+            {
+              text: 'Prevent Suspend On Lid Close',
+              link: '/notes/prevent_suspend_on_lid_close.md',
+            },
             { text: 'Setting Up SSH', link: '/notes/setting_up_ssh.md' },
-            { text: 'Creating A New Sudo User', link: '/notes/creating_a_new_sudo_user.md' },
-            { text: 'Setting Up Unattended Upgrades', link: '/notes/setting_up_unattended_upgrades.md' },
+            {
+              text: 'Creating A New Sudo User',
+              link: '/notes/creating_a_new_sudo_user.md',
+            },
+            {
+              text: 'Setting Up Unattended Upgrades',
+              link: '/notes/setting_up_unattended_upgrades.md',
+            },
             { text: 'Setting Up Docker', link: '/notes/setting_up_docker.md' },
             { text: 'Setting Up UFW', link: '/notes/setting_up_ufw.md' },
-            { text: 'Setting Up SSH Identity', link: '/notes/setting_up_ssh_identity.md' },
-            { text: 'Setting Up Docker Context', link: '/notes/setting_up_docker_context.md' },
-            { text: 'Setting Up SSL with Cloudflare and Certbot', link: '/notes/setting_up_ssl_with_cloudflare_and_certbot.md' }
-          ]
-        }
-      ]
+            {
+              text: 'Setting Up SSH Identity',
+              link: '/notes/setting_up_ssh_identity.md',
+            },
+            {
+              text: 'Setting Up Docker Context',
+              link: '/notes/setting_up_docker_context.md',
+            },
+            {
+              text: 'Setting Up SSL with Cloudflare and Certbot',
+              link: '/notes/setting_up_ssl_with_cloudflare_and_certbot.md',
+            },
+          ],
+        },
+      ],
     },
-    socialLinks: [{ icon: "github", link: "https://github.com/mfdebby" }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/mfdebby' }],
     aside: false,
   },
-});
+})
