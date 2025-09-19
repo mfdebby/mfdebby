@@ -1,23 +1,23 @@
 import {
-  // create naive ui
   create,
-  // component
-  NSpace,
   NLayout,
   NLayoutHeader,
   NLayoutContent,
   NLayoutFooter,
-  NButton,
   NTimeline,
   NTimelineItem,
   NFlex,
-  NMenu,
   NGrid,
   NGridItem,
-
-  // Theme
+  NAnchor,
+  NAnchorLink,
   NConfigProvider,
   NSwitch,
+  NDrawer,
+  NIcon,
+  NText,
+  NButton,
+  NDrawerContent,
 } from 'naive-ui'
 import { createPinia } from 'pinia'
 
@@ -26,23 +26,30 @@ import App from './App.vue'
 
 const naive = create({
   components: [
-    NButton,
     NTimeline,
     NTimelineItem,
-    NSpace,
     NLayout,
     NLayoutHeader,
     NLayoutContent,
     NLayoutFooter,
     NFlex,
-    NMenu,
     NGrid,
     NGridItem,
-
     NConfigProvider,
     NSwitch,
+    NAnchor,
+    NAnchorLink,
+    NIcon,
+    NText,
+    NButton,
+    NDrawer,
+    NDrawerContent
   ],
 })
+
+const meta = document.createElement('meta')
+meta.name = 'naive-ui-style'
+document.head.appendChild(meta)
 
 const app = createApp(App)
 const pinia = createPinia()
