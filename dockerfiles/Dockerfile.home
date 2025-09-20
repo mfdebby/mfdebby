@@ -19,4 +19,4 @@ FROM base
 COPY --from=build /app/node_modules /app/node_modules
 COPY --from=build /app/home/ /app/home/
 EXPOSE 2002
-CMD ["pnpm", "preview"]
+CMD ["pnpm", "preview", "--port", "2002"]
