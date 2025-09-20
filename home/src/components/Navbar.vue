@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { Menu, SunnyOutline, Moon } from '@vicons/ionicons5'
-import { useThemeStore } from '@/store/theme'
+import { useThemeStore } from '@/stores/theme'
 
 import { NConfigProvider, GlobalThemeOverrides } from 'naive-ui'
 
@@ -28,15 +28,11 @@ const showMenu = ref(false)
         <n-flex justify="end" align="center">
           <!-- Anchors -->
           <n-anchor class="flex" type="block">
-            <n-anchor-link
-              title="Profile"
-              href="#scrollto.profile"
-              style="font"
-            >
+            <n-anchor-link title="Profile" href="#profile">
             </n-anchor-link>
-            <n-anchor-link title="Timeline" href="#scrollto.timeline">
+            <n-anchor-link title="Timeline" href="#timeline">
             </n-anchor-link>
-            <n-anchor-link title="Tools" href="#scrollto.tools">
+            <n-anchor-link title="Tools" href="#tools">
             </n-anchor-link>
           </n-anchor>
 
@@ -71,11 +67,11 @@ const showMenu = ref(false)
       <n-drawer-content>
         <!-- Anchors -->
         <n-anchor class="flex flex-col space-y-4" type="block">
-          <n-anchor-link title="Profile" href="#scrollto.profile" style="font">
+          <n-anchor-link title="Profile" href="#profile" style="font">
           </n-anchor-link>
-          <n-anchor-link title="Timeline" href="#scrollto.timeline">
+          <n-anchor-link title="Timeline" href="#timeline">
           </n-anchor-link>
-          <n-anchor-link title="Tools" href="#scrollto.tools"> </n-anchor-link>
+          <n-anchor-link title="Tools" href="#tools"> </n-anchor-link>
         </n-anchor>
 
         <!-- Dark theme switch -->

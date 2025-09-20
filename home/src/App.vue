@@ -1,6 +1,6 @@
 <script setup>
 import { darkTheme } from 'naive-ui'
-import { useThemeStore } from '@/store/theme'
+import { useThemeStore } from '@/stores/theme'
 
 import Navbar from '@/components/Navbar.vue'
 import Profile from '@/components/Profile.vue'
@@ -18,9 +18,17 @@ const theme = useThemeStore()
         <Navbar />
       </n-layout-header>
       <n-layout-content class="min-h-screen overflow-x-hidden">
-        <Profile />
-        <Timeline />
-        <Tools />
+        <section id="profile">
+          <Profile />
+        </section>
+
+        <section id="timeline">
+          <Timeline />
+        </section>
+
+        <section id="tools">
+          <Tools />
+        </section>
       </n-layout-content>
       <n-layout-footer bordered>
         <Footer />
