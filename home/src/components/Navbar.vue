@@ -38,8 +38,6 @@ const showMenu = ref(false)
             </n-anchor-link>
             <n-anchor-link title="Tools" href="#scrollto.tools">
             </n-anchor-link>
-            <n-anchor-link title="Contacts" href="#scrollto.contacts">
-            </n-anchor-link>
           </n-anchor>
 
           <!-- Dark theme switch -->
@@ -78,8 +76,6 @@ const showMenu = ref(false)
           <n-anchor-link title="Timeline" href="#scrollto.timeline">
           </n-anchor-link>
           <n-anchor-link title="Tools" href="#scrollto.tools"> </n-anchor-link>
-          <n-anchor-link title="Contacts" href="#scrollto.contacts">
-          </n-anchor-link>
         </n-anchor>
 
         <!-- Dark theme switch -->

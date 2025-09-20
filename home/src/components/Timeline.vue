@@ -27,5 +27,3 @@ import { Briefcase } from '@vicons/ionicons5'
     </n-card>
   </n-flex>
 </template>
-
-<style scoped></style>

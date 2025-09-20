@@ -1,7 +1,7 @@
 <template>
-  <n-flex justify="center" class="pt-16">
+  <n-flex justify="center" class="py-16">
     <n-card :bordered="false" class="max-w-2xl">
-      <n-grid :y-gap="24" :cols="1">
+      <n-grid :y-gap="48" :cols="1">
         <!-- Languages -->
         <n-gi>
           <n-grid :cols="4">
@@ -180,14 +180,6 @@
             <n-gi>
               <n-flex justify="center">
                 <n-icon size="50">
-                  <i class="devicon-github-original"></i>
-                </n-icon>
-              </n-flex>
-            </n-gi>
-
-            <n-gi>
-              <n-flex justify="center">
-                <n-icon size="50">
                   <i class="devicon-nginx-original"></i>
                 </n-icon>
               </n-flex>
@@ -256,5 +248,3 @@
     </n-card>
   </n-flex>
 </template>
-
-<style scoped></style>

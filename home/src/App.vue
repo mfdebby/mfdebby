@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar.vue'
 import Profile from '@/components/Profile.vue'
 import Timeline from '@/components/Timeline.vue'
 import Tools from '@/components/Tools.vue'
+import Footer from '@/components/Footer.vue'
 
 const theme = useThemeStore()
 </script>
@@ -21,7 +22,9 @@ const theme = useThemeStore()
         <Timeline />
         <Tools />
       </n-layout-content>
-      <n-layout-footer bordered>Chengfu Road</n-layout-footer>
+      <n-layout-footer bordered>
+        <Footer />
+      </n-layout-footer>
     </n-layout>
   </n-config-provider>
 </template>
