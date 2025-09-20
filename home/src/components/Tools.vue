@@ -1,6 +1,10 @@
 <template>
   <n-flex justify="center" class="py-16">
-    <n-card :bordered="false" class="max-w-2xl" :style="{ backgroundColor: 'transparent', boxShadow: 'none' }">
+    <n-card
+      :bordered="false"
+      class="max-w-2xl"
+      :style="{ backgroundColor: 'transparent', boxShadow: 'none' }"
+    >
       <n-h2 class="underline underline-offset-8">Tools</n-h2>
       <n-grid :y-gap="48" :cols="1">
         <!-- Languages -->
@@ -223,7 +227,7 @@
             <n-gi>
               <n-flex justify="center">
                 <n-icon size="50">
-                  <i class="devicon-insomnia-plain"></i>
+                  <i class="devicon-tmux-plain"></i>
                 </n-icon>
               </n-flex>
             </n-gi>

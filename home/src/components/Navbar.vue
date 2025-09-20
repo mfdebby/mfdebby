@@ -17,50 +17,52 @@ const showMenu = ref(false)
 
 <template>
   <n-config-provider :theme-overrides="themeOverrides">
-    <n-grid :cols="2">
-      <!-- Logo -->
-      <n-gi>
-        <n-text class="text-lg">mfdebby</n-text>
-      </n-gi>
+    <n-flex justify="center" align="center">
+      <n-grid :cols="2" class="max-w-7xl">
+        <!-- Logo -->
+        <n-gi>
+          <n-flex align="center">
+            <img src="/butus_logo.png" alt="Butus" class="h-10 w-auto" />
+            <n-text class="text-lg">mfdebby</n-text>
+          </n-flex>
+        </n-gi>
 
-      <!-- Desktop menu -->
-      <n-gi class="hidden lg:block">
-        <n-flex justify="end" align="center">
-          <!-- Anchors -->
-          <n-anchor class="flex" type="block">
-            <n-anchor-link title="Profile" href="#profile">
-            </n-anchor-link>
-            <n-anchor-link title="Timeline" href="#timeline">
-            </n-anchor-link>
-            <n-anchor-link title="Tools" href="#tools">
-            </n-anchor-link>
-          </n-anchor>
+        <!-- Desktop menu -->
+        <n-gi class="hidden lg:block">
+          <n-flex justify="end" align="center">
+            <!-- Anchors -->
+            <n-anchor class="flex" type="block">
+              <n-anchor-link title="Profile" href="#profile"> </n-anchor-link>
+              <n-anchor-link title="Timeline" href="#timeline"> </n-anchor-link>
+              <n-anchor-link title="Tools" href="#tools"> </n-anchor-link>
+            </n-anchor>
 
-          <!-- Dark theme switch -->
-          <n-switch v-model:value="theme.isDark">
-            <template #checked-icon>
-              <n-icon>
-                <SunnyOutline />
-              </n-icon>
-            </template>
-            <template #unchecked-icon>
-              <n-icon>
-                <Moon />
-              </n-icon>
-            </template>
-          </n-switch>
-        </n-flex>
-      </n-gi>
+            <!-- Dark theme switch -->
+            <n-switch v-model:value="theme.isDark">
+              <template #checked-icon>
+                <n-icon>
+                  <SunnyOutline />
+                </n-icon>
+              </template>
+              <template #unchecked-icon>
+                <n-icon>
+                  <Moon />
+                </n-icon>
+              </template>
+            </n-switch>
+          </n-flex>
+        </n-gi>
 
-      <!-- Mobile hamburger -->
-      <n-gi class="flex lg:hidden justify-end">
-        <n-button quaternary circle @click="showMenu = true">
-          <n-icon size="30">
-            <Menu />
-          </n-icon>
-        </n-button>
-      </n-gi>
-    </n-grid>
+        <!-- Mobile hamburger -->
+        <n-gi class="flex lg:hidden justify-end">
+          <n-button quaternary circle @click="showMenu = true">
+            <n-icon size="30">
+              <Menu />
+            </n-icon>
+          </n-button>
+        </n-gi>
+      </n-grid>
+    </n-flex>
 
     <!-- Drawer for mobile menu -->
     <n-drawer v-model:show="showMenu" placement="right">
@@ -69,8 +71,7 @@ const showMenu = ref(false)
         <n-anchor class="flex flex-col space-y-4" type="block">
           <n-anchor-link title="Profile" href="#profile" style="font">
           </n-anchor-link>
-          <n-anchor-link title="Timeline" href="#timeline">
-          </n-anchor-link>
+          <n-anchor-link title="Timeline" href="#timeline"> </n-anchor-link>
           <n-anchor-link title="Tools" href="#tools"> </n-anchor-link>
         </n-anchor>
 

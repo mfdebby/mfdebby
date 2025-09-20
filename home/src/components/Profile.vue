@@ -1,6 +1,10 @@
 <template>
   <n-flex justify="center" class="pt-16">
-    <n-card :bordered="false" class="max-w-2xl" :style="{ backgroundColor: 'transparent', boxShadow: 'none' }">
+    <n-card
+      :bordered="false"
+      class="max-w-2xl"
+      :style="{ backgroundColor: 'transparent', boxShadow: 'none' }"
+    >
       <n-text class="text-lg">
         I’m a software engineer with a focus on
         <strong>backend and infrastructure</strong>. I build end-to-end

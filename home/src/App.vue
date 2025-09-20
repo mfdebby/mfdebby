@@ -14,7 +14,7 @@ const theme = useThemeStore()
 <template>
   <n-config-provider :theme="theme.isDark ? darkTheme : null">
     <n-layout style="height: 100vh">
-      <n-layout-header bordered class="sticky top-0 z-50">
+      <n-layout-header bordered class="sticky top-0 z-50 p-4">
         <Navbar />
       </n-layout-header>
       <n-layout-content class="min-h-screen overflow-x-hidden">
@@ -30,16 +30,9 @@ const theme = useThemeStore()
           <Tools />
         </section>
       </n-layout-content>
-      <n-layout-footer bordered>
+      <n-layout-footer bordered class="p-4">
         <Footer />
       </n-layout-footer>
     </n-layout>
   </n-config-provider>
 </template>
-
-<style scoped>
-.n-layout-header,
-.n-layout-footer {
-  padding: 24px;
-}
-</style>
