@@ -18,6 +18,10 @@ import {
   NText,
   NButton,
   NDrawerContent,
+  NAvatar,
+  NCard,
+  NH3,
+  NH4,
 } from 'naive-ui'
 import { createPinia } from 'pinia'
 
@@ -43,7 +47,11 @@ const naive = create({
     NText,
     NButton,
     NDrawer,
-    NDrawerContent
+    NDrawerContent,
+    NAvatar,
+    NCard,
+    NH3,
+    NH4,
   ],
 })
 
