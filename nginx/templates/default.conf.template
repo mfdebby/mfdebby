@@ -11,14 +11,14 @@ server {
     return 301 https://${DOMAIN};
 }
 
-# Hello World
+# Home
 server {
   listen 443 ssl;
 
   server_name ${DOMAIN};
 
   location / {
-    proxy_pass http://hello_world:8000;
+    proxy_pass http://home:2002;
 
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;

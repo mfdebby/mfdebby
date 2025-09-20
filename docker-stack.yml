@@ -27,10 +27,10 @@ services:
       networks:
         - mfdebby-network
 
-  hello_world:
-    image: crccheck/hello-world
-    networks:
-      - mfdebby-network
+  home:
+      image: ghcr.io/mfdebby/mfdebby/home:${GIT_COMMIT_HASH}
+      networks:
+        - mfdebby-network
 
   reverse-proxy:
     image: nginx:latest
