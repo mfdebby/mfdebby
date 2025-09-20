@@ -5,6 +5,7 @@ RUN corepack enable
 
 COPY ./package.json /app/package.json
 COPY ./pnpm-lock.yaml /app/pnpm-lock.yaml
+COPY ./vite.config.ts /app/vite.config.ts
 COPY ../home /app/home
 
 WORKDIR /app
