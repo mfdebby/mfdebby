@@ -1,14 +1,20 @@
 <script setup>
-import timeline from '@/data/timeline';
-import { Briefcase } from '@vicons/ionicons5';
+import timeline from '@/data/timeline'
+import { Briefcase } from '@vicons/ionicons5'
 </script>
 
 <template>
   <n-flex justify="center" class="pt-16">
     <n-card :bordered="false" class="max-w-2xl">
       <n-timeline>
-        <n-timeline-item type="info" v-for="item in timeline" :key="item.id" class="pb-5"
-          :time="`${item.year} - ${item.duration}`" :content="item.details">
+        <n-timeline-item
+          type="info"
+          v-for="item in timeline"
+          :key="item.id"
+          class="pb-5"
+          :time="`${item.year} - ${item.duration}`"
+          :content="item.details"
+        >
           <template #icon>
             <Briefcase />
           </template>

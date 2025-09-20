@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { ref } from "vue"
-import { Menu, SunnyOutline, Moon } from "@vicons/ionicons5"
-import { useThemeStore } from "@/store/theme"
+import { ref } from 'vue'
+import { Menu, SunnyOutline, Moon } from '@vicons/ionicons5'
+import { useThemeStore } from '@/store/theme'
 
-import { NConfigProvider, GlobalThemeOverrides } from "naive-ui"
+import { NConfigProvider, GlobalThemeOverrides } from 'naive-ui'
 
 const themeOverrides: GlobalThemeOverrides = {
   Anchor: {
-    linkFontSize: ".9rem",
-  }
+    linkFontSize: '.9rem',
+  },
 }
 
 const theme = useThemeStore()
@@ -28,7 +28,11 @@ const showMenu = ref(false)
         <n-flex justify="end" align="center">
           <!-- Anchors -->
           <n-anchor class="flex" type="block">
-            <n-anchor-link title="Profile" href="#scrollto.profile" style="font">
+            <n-anchor-link
+              title="Profile"
+              href="#scrollto.profile"
+              style="font"
+            >
             </n-anchor-link>
             <n-anchor-link title="Timeline" href="#scrollto.timeline">
             </n-anchor-link>
@@ -67,15 +71,13 @@ const showMenu = ref(false)
     <!-- Drawer for mobile menu -->
     <n-drawer v-model:show="showMenu" placement="right">
       <n-drawer-content>
-
         <!-- Anchors -->
         <n-anchor class="flex flex-col space-y-4" type="block">
           <n-anchor-link title="Profile" href="#scrollto.profile" style="font">
           </n-anchor-link>
           <n-anchor-link title="Timeline" href="#scrollto.timeline">
           </n-anchor-link>
-          <n-anchor-link title="Tools" href="#scrollto.tools">
-          </n-anchor-link>
+          <n-anchor-link title="Tools" href="#scrollto.tools"> </n-anchor-link>
           <n-anchor-link title="Contacts" href="#scrollto.contacts">
           </n-anchor-link>
         </n-anchor>
