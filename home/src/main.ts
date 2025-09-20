@@ -27,6 +27,7 @@ import { createPinia } from 'pinia'
 
 import { createApp } from 'vue'
 import App from './App.vue'
+import 'devicon/devicon.min.css'
 
 const naive = create({
   components: [
