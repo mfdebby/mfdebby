@@ -14,7 +14,7 @@ const theme = useThemeStore()
 <template>
   <n-config-provider :theme="theme.isDark ? darkTheme : null">
     <n-layout style="height: 100vh">
-      <n-layout-header bordered>
+      <n-layout-header bordered class="sticky top-0 z-50">
         <Navbar />
       </n-layout-header>
       <n-layout-content class="min-h-screen overflow-x-hidden">
