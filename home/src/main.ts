@@ -20,6 +20,7 @@ import {
   NDrawerContent,
   NAvatar,
   NCard,
+  NH2,
   NH3,
   NH4,
 } from 'naive-ui'
@@ -51,6 +52,7 @@ const naive = create({
     NDrawerContent,
     NAvatar,
     NCard,
+    NH2,
     NH3,
     NH4,
   ],
