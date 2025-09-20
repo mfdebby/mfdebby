@@ -1,6 +1,6 @@
 <template>
   <n-flex justify="center" class="py-16">
-    <n-card :bordered="false" class="max-w-2xl">
+    <n-card :bordered="false" class="max-w-2xl" :style="{ backgroundColor: 'transparent', boxShadow: 'none' }">
       <n-grid :y-gap="48" :cols="1">
         <!-- Languages -->
         <n-gi>

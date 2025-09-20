@@ -5,16 +5,10 @@ import { Briefcase } from '@vicons/ionicons5'
 
 <template>
   <n-flex justify="center" class="pt-16">
-    <n-card :bordered="false" class="max-w-2xl">
+    <n-card :bordered="false" class="max-w-2xl" :style="{ backgroundColor: 'transparent', boxShadow: 'none' }">
       <n-timeline>
-        <n-timeline-item
-          type="info"
-          v-for="item in timeline"
-          :key="item.id"
-          class="pb-5"
-          :time="`${item.year} - ${item.duration}`"
-          :content="item.details"
-        >
+        <n-timeline-item type="info" v-for="item in timeline" :key="item.id" class="pb-5"
+          :time="`${item.year} - ${item.duration}`" :content="item.details">
           <template #icon>
             <Briefcase />
           </template>
