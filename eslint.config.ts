@@ -21,6 +21,7 @@ export default [
       '.venv',
       'docs/.vitepress/dist',
       'docs/.vitepress/cache',
+      'home/dist',
     ],
   },
   { rules: { 'vue/multi-word-component-names': 'off' } },
