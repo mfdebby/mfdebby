@@ -23,6 +23,7 @@ import {
   NH2,
   NH3,
   NH4,
+  NImage,
 } from 'naive-ui'
 import { createPinia } from 'pinia'
 
@@ -55,6 +56,7 @@ const naive = create({
     NH2,
     NH3,
     NH4,
+    NImage
   ],
 })
 
