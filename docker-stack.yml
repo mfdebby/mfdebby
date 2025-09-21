@@ -23,12 +23,12 @@ services:
       - .env
 
   docs:
-      image: ghcr.io/mfdebby/mfdebby/docs:${GIT_COMMIT_HASH}
+      image: ghcr.io/mfdebby/mfdebby/docs:${DOCS_VERSION}
       networks:
         - mfdebby-network
 
   home:
-      image: ghcr.io/mfdebby/mfdebby/home:${GIT_COMMIT_HASH}
+      image: ghcr.io/mfdebby/mfdebby/home:${HOME_VERSION}
       networks:
         - mfdebby-network
 
