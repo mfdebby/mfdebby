@@ -14,4 +14,9 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./home/src', import.meta.url)),
     },
   },
+  preview: {
+    host: '0.0.0.0',
+    port: 2002,
+    allowedHosts: ['mfdebby.dev'],
+  },
 })
