@@ -48,6 +48,20 @@ services:
     networks:
       - mfdebby-network
 
+  dozzle:
+    image: amir20/dozzle:latest
+    environment:
+      - DOZZLE_AUTH_PROVIDER=simple
+      - DOZZLE_NO_ANALYTICS=false
+    secrets:
+      - source: dozzle_users
+        target: /data/users.yml
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - dozzle:/data
+    networks:
+      - mfdebby-network
+
 configs:
   nginx_conf:
     external: true
@@ -57,10 +71,13 @@ configs:
 secrets:
   cloudflare_ini:
     external: true
+  dozzle_users:
+    external: true
 
 volumes:
   certbot_dns_cloudflare:
   reverse-proxy-logs:
+  dozzle:
 
 networks:
   mfdebby-network:
