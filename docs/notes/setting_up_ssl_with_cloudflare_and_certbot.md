@@ -88,7 +88,7 @@ networks:
 vi .env
 ```
 
-```env
+```txt
 DOMAIN=<your_domain>
 DOMAIN_EMAIL=<email_used_to_create_the_domain>
 ```
