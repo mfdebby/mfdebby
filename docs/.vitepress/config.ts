@@ -4,9 +4,9 @@ export default defineConfig({
   lang: 'en-US',
   title: 'mfdebby',
   description: "mfdebby's site containing notes on anything related to tech.",
-  // head: [["link", { rel: "icon", href: "/logo.png" }]],
+  head: [["link", { rel: "icon", href: "/butus.ico" }]],
   themeConfig: {
-    // logo: "/logo.png",
+    logo: "/butus_logo.png",
     search: {
       provider: 'local',
     },
