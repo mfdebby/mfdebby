@@ -36,6 +36,7 @@ services:
     image: nginx:latest
     volumes:
       - certbot_dns_cloudflare:/etc/letsencrypt
+      - reverse-proxy-logs:/var/log/nginx
     ports:
       - 80:80
       - 443:443
@@ -59,6 +60,7 @@ secrets:
 
 volumes:
   certbot_dns_cloudflare:
+  reverse-proxy-logs:
 
 networks:
   mfdebby-network:
