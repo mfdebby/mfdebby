@@ -32,7 +32,7 @@ jobs:
           context: .
           push: true
           file: ./dockerfiles/Dockerfile.docs
-          tags: ghcr.io/mfdebby/mfdebby/docs:${{ vars.HOME_VERSION }}
+          tags: ghcr.io/mfdebby/mfdebby/docs:${{ vars.DOCS_VERSION }}
 
   deploy:
     runs-on: ubuntu-latest
