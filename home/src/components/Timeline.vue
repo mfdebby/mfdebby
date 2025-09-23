@@ -13,7 +13,6 @@ import { Briefcase } from '@vicons/ionicons5'
       <n-h2 class="underline underline-offset-8">Timeline</n-h2>
       <n-timeline>
         <n-timeline-item
-          type="info"
           v-for="item in timeline"
           :key="item.id"
           class="pb-5"
