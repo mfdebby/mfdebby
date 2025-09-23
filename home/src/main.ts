@@ -56,7 +56,7 @@ const naive = create({
     NH2,
     NH3,
     NH4,
-    NImage
+    NImage,
   ],
 })
 

@@ -17,8 +17,11 @@ const showMenu = ref(false)
 <template>
   <n-config-provider :theme-overrides="themeOverrides">
     <header class="w-full">
-
-      <n-flex justify="space-between" align="center" class="max-w-7xl mx-auto px-4">
+      <n-flex
+        justify="space-between"
+        align="center"
+        class="max-w-7xl mx-auto px-4"
+      >
         <!-- Logo -->
         <a href="/" class="flex items-center space-x-2">
           <n-image width="20" src="/butus_logo.png" preview-disabled />

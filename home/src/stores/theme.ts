@@ -4,9 +4,11 @@ import { ref, watch, type Ref } from 'vue'
 export const useThemeStore = defineStore('theme', () => {
   const savedTheme = localStorage.getItem('theme')
 
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  const systemPrefersDark = window.matchMedia(
+    '(prefers-color-scheme: dark)',
+  ).matches
   const isDark: Ref<boolean> = ref(
-    savedTheme ? savedTheme === 'dark' : systemPrefersDark
+    savedTheme ? savedTheme === 'dark' : systemPrefersDark,
   )
 
   watch(isDark, (val: boolean) => {
@@ -19,4 +21,3 @@ export const useThemeStore = defineStore('theme', () => {
 
   return { isDark, toggleTheme }
 })
-
