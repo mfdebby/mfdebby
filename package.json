@@ -11,7 +11,8 @@
     "docs:preview": "vitepress preview --port 2003 docs",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run"
   },
   "keywords": [],
   "author": "",
