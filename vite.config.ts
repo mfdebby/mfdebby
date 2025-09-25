@@ -19,4 +19,7 @@ export default defineConfig({
     port: 2002,
     allowedHosts: ['mfdebby.dev'],
   },
+  test: {
+    environment: 'jsdom',
+  },
 })
