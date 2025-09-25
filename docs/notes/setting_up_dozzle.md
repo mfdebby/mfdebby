@@ -60,6 +60,10 @@ docker stack deploy -c <stack-compose-file.yml> <stack_name>
 
 ![Dozzle Login](/dozzle_login.png)
 
-## Dozzle Dashboard
+## Dashboard
 
 ![Dozzle Dashboard](/dozzle_dashboard.png)
+
+## Container Logs
+
+![Dozzle Container Logs](/dozzle_logs.png)
