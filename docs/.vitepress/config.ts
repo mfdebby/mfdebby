@@ -43,6 +43,10 @@ export default defineConfig({
               text: 'Setting Up SSL with Cloudflare and Certbot',
               link: '/notes/setting_up_ssl_with_cloudflare_and_certbot.md',
             },
+            {
+              text: 'Setting Up Dozzle',
+              link: '/notes/setting_up_dozzle.md',
+            },
           ],
         },
       ],
