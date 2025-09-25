@@ -8,8 +8,8 @@ import Footer from '@/components/Footer.vue'
 describe('Footer.vue', () => {
   const wrapper = mount(Footer, {
     global: {
-      components: { NFlex, NIcon, NText }
-    }
+      components: { NFlex, NIcon, NText },
+    },
   })
 
   it('renders Naive UI components', () => {
@@ -35,8 +35,11 @@ describe('Footer.vue', () => {
     expect(links).toHaveLength(3)
 
     expect(links[0].attributes('href')).toBe('https://github.com/mfdebby')
-    expect(links[1].attributes('href')).toBe('https://www.linkedin.com/in/christian-lester-cayabyab-6b7849168')
-    expect(links[2].attributes('href')).toBe('mailto:mfchristianbcayabyab@gmail.com')
+    expect(links[1].attributes('href')).toBe(
+      'https://www.linkedin.com/in/christian-lester-cayabyab-6b7849168',
+    )
+    expect(links[2].attributes('href')).toBe(
+      'mailto:mfchristianbcayabyab@gmail.com',
+    )
   })
 })
-
