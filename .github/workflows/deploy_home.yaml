@@ -35,8 +35,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install 
 
-      - name: Lint codes
-        run: pnpm run format && pnpm run lint
+      - name: Test
+        run: pnpm run test 
 
   build-and-push-image:
     runs-on: ubuntu-latest
