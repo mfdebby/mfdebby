@@ -19,8 +19,6 @@ services:
     deploy:
       restart_policy:
         delay: 300s
-    env_file:
-      - .env
 
   docs:
       image: ghcr.io/mfdebby/mfdebby/docs:${DOCS_VERSION}
