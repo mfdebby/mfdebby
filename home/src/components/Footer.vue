@@ -5,19 +5,19 @@ import { Mail, LogoLinkedin } from '@vicons/ionicons5'
 <template>
   <n-flex justify="center" align="center" vertical>
     <n-flex>
-      <a href="https://github.com/mfdebby">
+      <a href="https://github.com/mfdebby" aria-label="GitHub profile linke">
         <n-icon size="20">
           <i class="devicon-github-original"></i>
         </n-icon>
       </a>
 
-      <a href="https://www.linkedin.com/in/christian-lester-cayabyab-6b7849168">
+      <a href="https://www.linkedin.com/in/christian-lester-cayabyab-6b7849168" aria-label="LinkedIn profile link">
         <n-icon size="20">
           <LogoLinkedin />
         </n-icon>
       </a>
 
-      <a href="mailto:mfchristianbcayabyab@gmail.com">
+      <a href="mailto:mfchristianbcayabyab@gmail.com" aria-label="Send email to mfchristianbcayabyab@gmail.com">
         <n-icon size="20">
           <Mail />
         </n-icon>
