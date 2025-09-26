@@ -17,10 +17,19 @@ const showMenu = ref(false)
 <template>
   <n-config-provider :theme-overrides="themeOverrides">
     <header class="w-full">
-      <n-flex justify="space-between" align="center" class="max-w-7xl mx-auto px-4">
+      <n-flex
+        justify="space-between"
+        align="center"
+        class="max-w-7xl mx-auto px-4"
+      >
         <!-- Logo -->
         <a href="/" class="flex items-center space-x-2">
-          <n-image width="20" src="/butus_logo.png" alt="mfdebby logo" preview-disabled />
+          <n-image
+            width="20"
+            src="/butus_logo.png"
+            alt="mfdebby logo"
+            preview-disabled
+          />
           <n-text class="text-lg font-semibold">mfdebby</n-text>
         </a>
 
@@ -48,7 +57,12 @@ const showMenu = ref(false)
 
         <!-- Mobile hamburger -->
         <div class="lg:hidden">
-          <n-button quaternary circle @click="showMenu = true" aria-label="Open menu">
+          <n-button
+            quaternary
+            circle
+            @click="showMenu = true"
+            aria-label="Open menu"
+          >
             <n-icon size="24">
               <Menu />
             </n-icon>
