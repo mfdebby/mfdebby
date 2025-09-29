@@ -47,6 +47,10 @@ export default defineConfig({
               text: 'Setting Up Dozzle',
               link: '/notes/setting_up_dozzle.md',
             },
+            {
+              text: 'SSH To GCloud VM Using IAP Tunnel',
+              link: '/notes/ssh_to_gcloud_vm_using_iap_tunnel.md',
+            },
           ],
         },
       ],
