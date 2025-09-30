@@ -14,7 +14,7 @@ vi ~/.ssh/config
 
 ```text
 Host <host_name>
-  Hostname <vm_instance_iternal_ip>
+  Hostname compute.<vm-instance-name>
   User <gcloud_username>
   ProxyCommand gcloud compute start-iap-tunnel <vm-instance-name> 22 --listen-on-stdin --project <project_id> --zone us-central1-a
   IdentityFile ~/.ssh/google_compute_engine
