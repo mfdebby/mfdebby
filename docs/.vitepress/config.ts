@@ -10,7 +10,10 @@ export default defineConfig({
     search: {
       provider: 'local',
     },
-    nav: [{ text: 'Notes', link: '/notes/prevent_suspend_on_lid_close' }],
+    nav: [
+      { text: 'Notes', link: '/notes/prevent_suspend_on_lid_close' },
+      { text: 'Homelab', link: '/homelab/create_proxmox_vm_template.md' },
+    ],
     sidebar: {
       '/notes/': [
         {
@@ -50,6 +53,17 @@ export default defineConfig({
             {
               text: 'SSH To GCloud VM Using IAP Tunnel',
               link: '/notes/ssh_to_gcloud_vm_using_iap_tunnel.md',
+            },
+          ],
+        },
+      ],
+      '/homelab/': [
+        {
+          text: 'Homelab',
+          items: [
+            {
+              text: 'Create Proxmox VM Template',
+              link: '/homelab/create_proxmox_vm_template.md',
             },
           ],
         },
