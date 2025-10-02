@@ -54,6 +54,10 @@ export default defineConfig({
               text: 'SSH To GCloud VM Using IAP Tunnel',
               link: '/notes/ssh_to_gcloud_vm_using_iap_tunnel.md',
             },
+            {
+              text: 'GitHub Workflow: Deploy Docker Stack to GCP VM',
+              link: '/notes/ghwf_docker_stack_gcloud.md',
+            },
           ],
         },
       ],
