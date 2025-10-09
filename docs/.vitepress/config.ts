@@ -58,6 +58,14 @@ export default defineConfig({
               text: 'GitHub Workflow: Deploy Docker Stack to GCP VM',
               link: '/notes/ghwf_docker_stack_gcloud.md',
             },
+            {
+              text: 'Basic K8s Setup With Ingress',
+              link: '/notes/basic_k8s_setup_with_ingress.md',
+            },
+            {
+              text: 'Fix Unresponsive Docker',
+              link: '/notes/fix_unresponsive_docker.md',
+            },
           ],
         },
       ],
@@ -76,4 +84,5 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: 'https://github.com/mfdebby' }],
     aside: false,
   },
+  lastUpdated: true,
 })
