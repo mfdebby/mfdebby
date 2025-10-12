@@ -13,6 +13,7 @@ export default defineConfig({
     nav: [
       { text: 'Notes', link: '/notes/prevent_suspend_on_lid_close' },
       { text: 'Homelab', link: '/homelab/create_proxmox_vm_template.md' },
+      { text: 'Networking', link: '/networking/subnetting_ipv4.md' },
     ],
     sidebar: {
       '/notes/': [
@@ -80,6 +81,18 @@ export default defineConfig({
           ],
         },
       ],
+      '/networking/': [
+        {
+          text: 'Networking',
+          items: [
+            {
+              text: 'Subnetting IPv4',
+              link: '/networking/subnetting_ipv4.md',
+            },
+          ],
+        },
+      ],
+
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/mfdebby' }],
     aside: false,
