@@ -78,6 +78,10 @@ export default defineConfig({
               text: 'Create Proxmox VM Template',
               link: '/homelab/create_proxmox_vm_template.md',
             },
+            {
+              text: 'Create Private Network With VM Bridge',
+              link: '/homelab/create_private_network_with_vm_bridge.md',
+            },
           ],
         },
       ],
@@ -92,7 +96,6 @@ export default defineConfig({
           ],
         },
       ],
-
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/mfdebby' }],
     aside: false,
