@@ -14,9 +14,9 @@
 
 ## 5. Install
 
-> Just follow the default setup
+> Just use the default settings
 
-## 6. Check the web UI
+## 6. Login to the web UI
 
 ![TrueNas Installed](/truenas_installed.png)
 
@@ -31,9 +31,20 @@
 ## 8. SSH to the proxmox node
 
 ```bash
+# The drive serial can be found in
+# the proxmox node Disk tab
+
+# The first result is the disk-id
+
 # Get the disk id
 ls /dev/disk/by-id | grep "<drive-serial>"
 
 # Attach the drive to the VM
 qm set <vm-id> -scsi1 /dev/disk/by-id/<disk-id>
 ```
+
+## 9. Verify that the drive is attached
+
+![VM Drive Attached](/truenas_vm_disk_attached.png)
+
+![Web UI Drive Attached](/truenas_web_ui_drive_attached.png)
