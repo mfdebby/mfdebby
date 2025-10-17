@@ -82,6 +82,10 @@ export default defineConfig({
               text: 'Create Private Network With VM Bridge',
               link: '/homelab/create_private_network_with_vm_bridge.md',
             },
+            {
+              text: 'TrueNas Proxmox VM Setup',
+              link: '/homelab/truenas_proxmox_vm_setup.md',
+            },
           ],
         },
       ],
