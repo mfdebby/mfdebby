@@ -86,6 +86,10 @@ export default defineConfig({
               text: 'TrueNas Proxmox VM Setup',
               link: '/homelab/truenas_proxmox_vm_setup.md',
             },
+            {
+              text: 'Create Windows VM',
+              link: '/homelab/create_windows_vm.md',
+            },
           ],
         },
       ],
