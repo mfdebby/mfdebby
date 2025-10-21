@@ -22,7 +22,7 @@
 
 ## 6. Just follow the installation steps
 
-## 7. Use the Proxmox virtual driver to fix the missing drive
+## 7. Use the Proxmox virtual drivers to fix the missing drive
 
 ## 8. Install windows in the drive
 
