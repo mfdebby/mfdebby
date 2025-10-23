@@ -94,7 +94,6 @@ export default defineConfig({
               text: 'Mounting TrueNas NFS to Proxmox VM',
               link: '/homelab/mounting_truenas_nfs_to_proxmox_vm.md',
             },
-
           ],
         },
       ],
@@ -109,7 +108,6 @@ export default defineConfig({
           ],
         },
       ],
-
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/mfdebby' }],
     aside: false,
