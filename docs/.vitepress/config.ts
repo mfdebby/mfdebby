@@ -14,6 +14,7 @@ export default defineConfig({
       { text: 'Notes', link: '/notes/prevent_suspend_on_lid_close' },
       { text: 'Homelab', link: '/homelab/create_proxmox_vm_template.md' },
       { text: 'Networking', link: '/networking/subnetting_ipv4.md' },
+      { text: 'Solar Power', link: '/solar_power/200w_solar_power_system.md' },
     ],
     sidebar: {
       '/notes/': [
@@ -94,6 +95,7 @@ export default defineConfig({
               text: 'Mounting TrueNas NFS to Proxmox VM',
               link: '/homelab/mounting_truenas_nfs_to_proxmox_vm.md',
             },
+
           ],
         },
       ],
@@ -104,6 +106,17 @@ export default defineConfig({
             {
               text: 'Subnetting IPv4',
               link: '/networking/subnetting_ipv4.md',
+            },
+          ],
+        },
+      ],
+      '/solar_power/': [
+        {
+          text: 'Solar Power',
+          items: [
+            {
+              text: '200W Solar Power System',
+              link: '/solar_power/200w_solar_power_system.md',
             },
           ],
         },
