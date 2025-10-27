@@ -59,3 +59,7 @@ jobs:
           user: ${{ secrets.DEPLOY_USER }}
           ssh_key: ${{ secrets.DEPLOY_SSH_KEY }}
           env_file: '.env'
+
+      - name: Cleanup
+        run: |
+            docker image prune -f
