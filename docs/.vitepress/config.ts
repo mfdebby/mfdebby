@@ -122,6 +122,11 @@ export default defineConfig({
               text: '200W Solar Power System',
               link: '/solar_power/200w_solar_power_system.md',
             },
+            {
+              text: 'How To Size A Circuit Breaker',
+              link: '/solar_power/how_to_size_a_circuit_breaker.md',
+            },
+
           ],
         },
       ],
