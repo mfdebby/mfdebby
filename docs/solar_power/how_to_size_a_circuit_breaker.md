@@ -49,6 +49,7 @@ Circuit Breaker = `Current` x `1.25 (Safety factor)`
 > Current = (`Load Percent` x `Inverter Wattage`) / 220V
 >
 > Current = (70% x 1000W) / 220V = 3.18A
+>
 > Circuit Breaker = 3.18A x 1.25 = 3.9A
 >
 > We can use a 6A AC circuit breaker
