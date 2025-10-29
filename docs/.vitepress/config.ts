@@ -107,6 +107,10 @@ export default defineConfig({
               text: 'Subnetting IPv4',
               link: '/networking/subnetting_ipv4.md',
             },
+            {
+              text: 'WAN + 2LAN2 Setup',
+              link: '/networking/wan_2lan2_setup.md',
+            },
           ],
         },
       ],
