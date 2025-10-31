@@ -127,7 +127,7 @@ export default defineConfig({
               link: '/solar_power/how_to_size_a_circuit_breaker.md',
             },
             {
-              text: 'How To Wire size',
+              text: 'How To Wire Size',
               link: '/solar_power/how_to_wire_size.md',
             },
           ],
