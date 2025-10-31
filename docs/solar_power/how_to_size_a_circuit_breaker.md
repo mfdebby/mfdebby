@@ -44,7 +44,7 @@ Circuit Breaker = `Current` x `1.25 (Safety factor)`
 >
 > We need a 100A DC circuit breaker
 
-## Sizing a circuit breaker for inverter to
+## Sizing a circuit breaker for inverter to outlet connection
 
 > Current = (`Load Percent` x `Inverter Wattage`) / 220V
 >
