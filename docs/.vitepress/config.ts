@@ -95,7 +95,10 @@ export default defineConfig({
               text: 'Mounting TrueNas NFS to Proxmox VM',
               link: '/homelab/mounting_truenas_nfs_to_proxmox_vm.md',
             },
-
+            {
+              text: 'LXC Nginx Reverse Proxy With Certbot DNS Cloudflare',
+              link: '/homelab/lxc_nginx_reverse_proxy_with_certbot_dns_cloudflare.md',
+            },
           ],
         },
       ],
