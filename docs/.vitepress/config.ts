@@ -68,6 +68,10 @@ export default defineConfig({
               text: 'Fix Unresponsive Docker',
               link: '/notes/fix_unresponsive_docker.md',
             },
+            {
+              text: 'Routing Cloud Run Egress To A Static IP',
+              link: '/notes/routing_cloud_run_egress_to_a_static_ip.md',
+            },
           ],
         },
       ],
