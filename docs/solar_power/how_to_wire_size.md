@@ -14,11 +14,12 @@
 >
 > Get the solar panel `Vmp` spec for `Voltage` value
 >
-> If we have two solar panels in series
+> If we have three solar panels in series
 >
 > 22.48 Vmp x 2 = 44.96V
+> 8.90A x 3 = 26.7
 >
-> (8.90A x 49.2ft) / (44.96V x % 2) = 437.8 / 89.9 = `4.86 VDI`
+> (26.7A x 13.1ft) / (44.96V x % 2) = 349.77 / 89.9 = `3.89 VDI`
 >
 > Base from the wire size chart we can use `10 AWG`
 
