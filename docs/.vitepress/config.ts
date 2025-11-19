@@ -72,6 +72,7 @@ export default defineConfig({
               text: 'Routing Cloud Run Egress To A Static IP',
               link: '/notes/routing_cloud_run_egress_to_a_static_ip.md',
             },
+
           ],
         },
       ],
@@ -102,6 +103,10 @@ export default defineConfig({
             {
               text: 'LXC Nginx Reverse Proxy With Certbot DNS Cloudflare',
               link: '/homelab/lxc_nginx_reverse_proxy_with_certbot_dns_cloudflare.md',
+            },
+            {
+              text: 'Wireguard and Proton VPN Setup',
+              link: '/homelab/wireguard_and_proton_vpn_setup.md',
             },
           ],
         },
