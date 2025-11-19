@@ -36,7 +36,7 @@ sudo vi /etc/fstab
 
 # Write this inside the fstab file
 # This will automatically mount the NFS when the VM boots up
-<trunas_ip_or_domain>:/mnt/Pool1/Proxmox/Media /mnt/media nfs defaults 0 0
+<truenas_ip_or_domain>:/mnt/Pool1/Proxmox/Media /mnt/media nfs defaults 0 0
 
 sudo mount -a
 ```
