@@ -16,5 +16,5 @@ tar node_exporter-1.10.2.linux-amd64.tar.gz
 
 ```bash
 cd node_exporter-1.10.2.linux-amd64/
-./node_explorer
+nohup ./node_exporter &
 ```
