@@ -18,3 +18,9 @@ tar node_exporter-1.10.2.linux-amd64.tar.gz
 cd node_exporter-1.10.2.linux-amd64/
 nohup ./node_exporter &
 ```
+
+## 4. Check the metrics endpoint
+
+```bash
+curl http://<vm-ip>:9100/metrics
+```
