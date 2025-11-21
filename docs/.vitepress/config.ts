@@ -109,8 +109,8 @@ export default defineConfig({
               link: '/homelab/wireguard_and_proton_vpn_setup.md',
             },
             {
-              text: 'Setting Up Prometheus Node Explorer',
-              link: '/homelab/setting_up_prometheus_node_explorer.md',
+              text: 'Setting Up Prometheus Exporters',
+              link: '/homelab/setting_up_prometheus_exporters.md',
             },
 
           ],
