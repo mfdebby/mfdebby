@@ -72,7 +72,10 @@ export default defineConfig({
               text: 'Routing Cloud Run Egress To A Static IP',
               link: '/notes/routing_cloud_run_egress_to_a_static_ip.md',
             },
-
+            {
+              text: 'TCP Timeout Between Containers in Docker Swarm',
+              link: '/notes/tcp_timeout_between_containers_in_docker_swarm.md',
+            },
           ],
         },
       ],
