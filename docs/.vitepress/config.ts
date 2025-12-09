@@ -76,6 +76,11 @@ export default defineConfig({
               text: 'TCP Timeout Between Containers in Docker Swarm',
               link: '/notes/tcp_timeout_between_containers_in_docker_swarm.md',
             },
+            {
+              text: 'Uploading Container Logs To GCS Using Vector',
+              link: '/notes/uploading_container_logs_to_gcs_using_vector.md',
+            },
+
           ],
         },
       ],
