@@ -24,7 +24,7 @@ services:
         target: gcp-sa.json
     environment:
       GOOGLE_APPLICATION_CREDENTIALS: /run/secrets/gcp-sa.json
-      TZ: America/Chicago
+      TZ: Asia/Manila
     command: ['--config', '/etc/vector/vector.toml']
 
 configs:
@@ -68,7 +68,7 @@ key_prefix = "%Y/%m/%d/{{ service }}/"
 
 encoding.codec = "json"
 
-batch.timeout_secs = 43200
+batch.timeout_secs = 60
 
 compression = "gzip"
 ```
