@@ -80,7 +80,10 @@ export default defineConfig({
               text: 'Uploading Container Logs To GCS Using Vector',
               link: '/notes/uploading_container_logs_to_gcs_using_vector.md',
             },
-
+            {
+              text: 'Self Hosted GitHub Runners With Docker Stack',
+              link: '/notes/self_hosted_github_runners_with_docker_stack.md',
+            },
           ],
         },
       ],
