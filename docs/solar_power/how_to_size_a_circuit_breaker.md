@@ -30,9 +30,9 @@ Circuit Breaker = `Current` x `1.25 (Safety factor)`
 >
 > Get the `Rated charging current` of the MPPT
 >
-> Circuit Breaker = (Rated charging current) 20A x 1.25 = 25A
+> Circuit Breaker = (Rated charging current) 80A x 1.25 = 100A
 >
-> We need a 25A DC circuit breaker
+> We need a 100A DC circuit breaker
 
 ## Sizing a circuit breaker for battery bank to inverter connection
 
